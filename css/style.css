@@ -1,0 +1,904 @@
+/* =======================================
+  All-Common-Css-Start
+==========================================*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* =======================================
+  All-Common-Css-End
+==========================================*/
+
+/* =======================================
+  Navbar-Section-Start
+==========================================*/
+#navbar {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  position: absolute;
+  background: rgba(255, 251, 253, 0.9);
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 0px 3px 1px transparent;
+  z-index: 100;
+  transition: all linear 0.3s;
+}
+
+.navbar-fixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 0px 3px 1px #d50a51 !important;
+  animation: navbarScrollAnimation linear 0.4s;
+}
+@keyframes navbarScrollAnimation {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#menu li a {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+  transition: all linear 0.2s;
+}
+#menu li a:hover {
+  color: #d50a51;
+}
+#menu li a::before {
+  position: absolute;
+  content: '';
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 22px;
+  width: 52px;
+  background: url(../images/hover.png) no-repeat center;
+  opacity: 0;
+  transition: all linear 0.2s;
+}
+#menu li a:hover::before {
+  opacity: 1;
+}
+
+#login-register {
+  border-radius: 35px;
+  background: #d50a51;
+  padding: 8px 20px 10px;
+}
+#login-register a,
+#login-register span {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+}
+/* =======================================
+  Navbar-Section-End
+==========================================*/
+/* =======================================
+  Banner-Section-Start
+==========================================*/
+#banner {
+  padding-top: 145px;
+  background: #fffbfd;
+}
+
+#banner-text {
+  padding-top: 91px;
+}
+
+#banner-text h1 {
+  color: #8a5e3b;
+  font-size: 61px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+}
+#banner-text h3 {
+  color: #d50a51;
+  font-size: 84px;
+  font-weight: 400;
+  font-family: 'Great Vibes', cursive;
+  line-height: 25px;
+}
+#banner-text p {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 26px;
+  padding: 40px 20px 0px;
+}
+
+#gift-proposal {
+  border-radius: 35px;
+  border: 1px solid #d50a51;
+  padding: 10px 20px 8px;
+  transition: all linear 0.2s;
+}
+#gift-proposal:hover {
+  background: #d50a51;
+}
+#gift-proposal:hover a {
+  color: #fff;
+}
+#gift-proposal:hover span {
+  color: #fff;
+}
+#gift-proposal a,
+#gift-proposal span {
+  color: #d50a51;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+  transition: all linear 0.2s;
+}
+/* =======================================
+  Banner-Section-End
+==========================================*/
+
+/* =======================================
+  History-Section-Start
+==========================================*/
+#history {
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+
+#history-text h3 {
+  position: relative;
+  color: #666666;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#history-text h3::before {
+  position: absolute;
+  content: '';
+  top: -21px;
+  left: -6px;
+  width: 86px;
+  height: 77px;
+  background: url(../images/heading-love-shape.png) no-repeat center/cover;
+}
+#history-text h3 span {
+  display: block;
+  color: #d50a51;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#history-text p {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 26px;
+  padding-top: 50px;
+}
+#history-text p span {
+  display: block;
+  padding-top: 30px;
+}
+
+/* =======================================
+  History-Section-End
+==========================================*/
+/* =======================================
+  Gift-Section-Start
+==========================================*/
+#gift {
+  background: #fffae1;
+}
+
+#gift-text h3 {
+  position: relative;
+  color: #666666;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#gift-text h3::before {
+  position: absolute;
+  content: '';
+  top: -21px;
+  left: -6px;
+  width: 86px;
+  height: 77px;
+  background: url(../images/heading-love-shape.png) no-repeat center/cover;
+}
+#gift-text h3 span {
+  display: block;
+  color: #d50a51;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#gift-text p {
+  padding-top: 35px;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 26px;
+  padding-bottom: 10px;
+}
+
+#gift-text p span {
+  display: block;
+  padding-top: 30px;
+}
+#send-gift-proposal a {
+  padding: 8px 20px;
+  border-radius: 35px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+  transition: all linear 0.2s;
+  border: 1px solid #d50a51;
+  color: #d50a51;
+}
+#send-gift-proposal a:hover {
+  background: #d50a51;
+  color: #fff;
+}
+
+#gift-image {
+  bottom: 0;
+  left: 0;
+  transform: scale(1.2);
+}
+/* =======================================
+  Gift-Section-End
+==========================================*/
+
+/* =======================================
+  Ticket-Section-Start
+==========================================*/
+#ticket {
+  padding-top: 115px;
+  padding-bottom: 95px;
+}
+
+#ticket-text h3 {
+  position: relative;
+  color: #666666;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#ticket-text h3::before {
+  position: absolute;
+  content: '';
+  top: -21px;
+  right: -6px;
+  width: 86px;
+  height: 77px;
+  background: url(../images/heading-love-shape.png) no-repeat center/cover;
+  transform: scale(-1, 1);
+}
+#ticket-text h3 span {
+  display: block;
+  color: #d50a51;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#ticket-text p {
+  padding-top: 35px;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 26px;
+  padding-bottom: 10px;
+}
+
+#ticket-text p span {
+  display: block;
+  padding-top: 30px;
+}
+
+#get-ticket-quoate a {
+  padding: 8px 20px;
+  border-radius: 35px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+  transition: all linear 0.2s;
+  border: 1px solid #d50a51;
+  color: #d50a51;
+}
+#get-ticket-quoate a:hover {
+  background: #d50a51;
+  color: #fff;
+}
+/* =======================================
+  Ticket-Section-End
+==========================================*/
+/* =======================================
+  Services-Section-Start
+==========================================*/
+#services {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #fef9fb;
+}
+
+#services-text h3 {
+  position: relative;
+  color: #666666;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#services-text h3::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -6px;
+  width: 86px;
+  height: 77px;
+  background: url(../images/heading-love-shape.png) no-repeat center/cover;
+}
+#services-text h3 span {
+  display: block;
+  color: #d50a51;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#services-text p {
+  padding-top: 35px;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 26px;
+  padding-bottom: 10px;
+}
+
+#services-text p span {
+  display: block;
+  padding-top: 30px;
+}
+
+#services .item {
+  padding: 30px 30px 20px;
+  border-radius: 2px;
+  transition: all linear 0.1s;
+  cursor: pointer;
+  border-right: 3px solid transparent;
+}
+#services .item:hover {
+  background: #f1f1f1;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.35));
+  border-right: 3px solid #d50a51;
+}
+#services .item h5 {
+  padding-top: 18px;
+  color: #d50a51;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#services .item p {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 26px;
+  padding-top: 15px;
+}
+
+/* =======================================
+  Services-Section-End
+==========================================*/
+
+/* =======================================
+  Captarus-Section-Start
+==========================================*/
+#captarus {
+  padding: 100px 0;
+}
+#captarus .image {
+  position: relative;
+  height: auto;
+  width: 100%;
+  cursor: pointer;
+}
+#captarus .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: all linear 0.2s;
+}
+#captarus .overlay .icon a {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+#captarus .overlay .icon a:nth-child(1) {
+  transition-delay: 0.2s;
+}
+#captarus .overlay .icon a:nth-child(2) {
+  transition-delay: 0.3s;
+}
+#captarus .overlay .icon a:nth-child(3) {
+  transition-delay: 0.4s;
+}
+#captarus .overlay .icon a:nth-child(4) {
+  transition-delay: 0.5s;
+}
+#captarus .overlay .icon a:hover {
+  background-color: #d50a51;
+  border: 1px solid #d50a51;
+  transition: 0.3s;
+}
+#captarus .image:hover .overlay {
+  opacity: 1;
+}
+#captarus .image:hover .overlay .icon a {
+  opacity: 1;
+}
+#captarus .image:hover .overlay .card-footer {
+  opacity: 1;
+}
+.card-footer {
+  opacity: 0;
+  transition: 0.2s;
+  transition-delay: 0.4s;
+}
+.card-footer h5 {
+  color: #ddd;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+  cursor: text;
+}
+.like-comment {
+  color: #ddd;
+}
+.like-comment i {
+  font-size: 12px;
+}
+.like-comment .download,
+.like-comment .like,
+.like-comment .comment {
+  font-size: 14px;
+  color: #ddd;
+}
+.like-comment .download:hover,
+.like-comment .like:hover,
+.like-comment .comment:hover {
+  color: #fff;
+}
+
+#capture-text h3 {
+  position: relative;
+  color: #666666;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#capture-text h3::before {
+  position: absolute;
+  content: '';
+  top: -25px;
+  right: -30px;
+  width: 86px;
+  height: 77px;
+  background: url(../images/heading-love-shape.png) no-repeat center/cover;
+  transform: scale(-1, 1);
+}
+#capture-text h3 span {
+  display: block;
+  color: #d50a51;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#capture-text p {
+  padding-top: 35px;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 26px;
+  padding-bottom: 10px;
+}
+
+#capture-text p span {
+  display: block;
+  padding-top: 30px;
+}
+
+#browse-upload a {
+  padding: 8px 20px;
+  border-radius: 35px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+  transition: all linear 0.2s;
+  border: 1px solid #d50a51;
+  color: #d50a51;
+}
+#browse-upload a:hover {
+  background: #d50a51;
+  color: #fff;
+}
+/* =======================================
+  Captarus-Section-End
+==========================================*/
+
+/* =======================================
+  Counter-Section-Start
+==========================================*/
+#counter {
+  padding-bottom: 140px;
+}
+#counter .counter-main {
+  background: url(../images/counter-bg.jpg) no-repeat center/cover;
+  padding: 92px 0;
+}
+#counter .counter-main h3 {
+  position: relative;
+  line-height: 30px;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #444444;
+}
+#counter .counter-main h3::before {
+  position: absolute;
+  content: '';
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 51px;
+  width: 59px;
+  background: url(../images/counter-shape.png);
+}
+#counter .counter-main h3 span {
+  display: block;
+  font-size: 42px;
+  font-weight: 700;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #d50a51;
+}
+/* =======================================
+  Counter-Section-End
+==========================================*/
+/* =======================================
+  Slider-Section-Start
+==========================================*/
+#slider {
+  padding-bottom: 150px;
+}
+.slick-slide {
+  margin: 0 10px;
+}
+#slider .slider-main {
+  position: relative;
+}
+#slider .slider-main::before {
+  position: absolute;
+  content: '';
+  top: -40px;
+  left: -35px;
+  height: 66px;
+  width: 72px;
+  background: url(../images/slider-shape.png) no-repeat center/cover;
+}
+#slider .slider-main::after {
+  position: absolute;
+  content: '';
+  bottom: -40px;
+  right: -35px;
+  height: 66px;
+  width: 72px;
+  background: url(../images/slider-shape.png) no-repeat center/cover;
+  transform: rotate(180deg);
+}
+#slider .item {
+  background: #fffae2;
+  width: 100%;
+  padding: 25px 30px 30px;
+}
+#slider .item .item-text p {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 26px;
+}
+#slider .item .item-footer h5 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #222;
+  margin-top: 28px;
+}
+#slider .item .item-footer h5 span {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  color: #444444;
+}
+
+#slider .slider-arrow {
+  position: absolute;
+  border: 1px solid #d81b5d;
+  color: #d81b5d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  height: 35px;
+  width: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+#slider .slider-arrow:hover {
+  background: #d81b5d;
+  color: #fff;
+}
+#slider .slider-arrow.right {
+  right: -60px;
+}
+#slider .slider-arrow.left {
+  left: -60px;
+}
+/* =======================================
+  Slider-Section-End
+==========================================*/
+
+/* =======================================
+  Footer-Section-Start
+==========================================*/
+#footer {
+  background: -webkit-radial-gradient(center, #ffffff 30%, #fad3e5 100%);
+}
+#footer .footer-main {
+  padding-top: 85px;
+  padding-bottom: 30px;
+  position: relative;
+}
+#footer .contact {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  background: #d50a51;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 60px;
+}
+#footer .contact .contact-text h3 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+}
+#footer .contact .contact-text p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#footer .contact .form-input {
+  display: block;
+  width: 100%;
+  font-size: 13px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  border: none;
+  background: transparent;
+  border-radius: none;
+  color: #fff;
+  border: 1px solid #fff;
+}
+#footer .contact .form-input::placeholder {
+  color: #fff;
+  opacity: 1;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+#footer .contact .send-btn {
+  font-size: 13px;
+  padding: 3px 10px 7px;
+  border: none;
+  background: transparent;
+  border-radius: none;
+  color: #fff;
+  border: 1px solid #fff;
+  border-left: none;
+  transition: all linear 0.3s;
+}
+#footer .contact .send-btn:hover {
+  background: #fff;
+  color: #d50a51;
+}
+#footer .contact-location {
+  padding-top: 60px;
+}
+#footer .contact-location .icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #d50a51;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  color: #fff;
+}
+#footer .contact-location .text {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+#footer .contact-location .text span {
+  display: block;
+}
+
+#footer .follow-text {
+  padding-top: 60px;
+}
+#footer .follow-text h3 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #d50a51;
+}
+#footer .social-icon {
+  padding-top: 10px;
+}
+#footer .social-icon .social-icon-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#footer .social-icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #d50a51;
+  border: 1px solid #d50a51;
+  transition: all linear 0.3s;
+}
+#footer .social-icon a:hover {
+  color: #fff;
+  background: #d50a51;
+}
+#copyright {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  background: #fad3e5;
+}
+#copyright p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  color: #444444;
+}
+#copyright p span {
+  color: #d50a51;
+}
+/* =======================================
+  Footer-Section-End
+==========================================*/
+
+/* =======================================
+  Preloader-Section-Start
+==========================================*/
+#preloader {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fef9fb;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#preloader .loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d50a51;
+  font-size: 80px;
+  gap: 40px;
+}
+#preloader .loader i {
+  animation: loaderAnimation 2s linear infinite;
+}
+#preloader .loader i:nth-child(1) {
+  animation-delay: 0s;
+}
+#preloader .loader i:nth-child(2) {
+  animation-delay: 0.75s;
+}
+#preloader .loader i:nth-child(3) {
+  animation-delay: 1.25s;
+}
+@keyframes loaderAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* =======================================
+  Preloader-Section-End
+==========================================*/
+
+/* =======================================
+  MouseMove-Effect-Start
+==========================================*/
+.effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+  background: #fad3e5;
+}
+/* =======================================
+  MouseMove-Effect-End
+==========================================*/
